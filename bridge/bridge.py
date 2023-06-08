@@ -14,8 +14,8 @@ class Bridge(object):
     def __init__(self):
         self.btype = {
             "chat": const.CHATGPT,
-            "voice_to_text": conf().get("voice_to_text", "openai"),
-            "text_to_voice": conf().get("text_to_voice", "google"),
+            "voice_to_text": conf().get("voice_to_text", "baidu"),
+            "text_to_voice": conf().get("text_to_voice", "baidu"),
             "translate": conf().get("translate", "baidu"),
         }
         model_type = conf().get("model")
